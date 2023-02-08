@@ -8,8 +8,11 @@ const io = require('socket.io')(http, {
 });
 
 const user = {};
-
+app.get("/", (req, res) => {
+    res.send("<h1>server start</h1>");
+})
 http.listen(8000, function() {
+    console.log("Server listening on Port", 8000);
     io.on('connection', socket => { // This is an listen event it means server Listen all new updates , activities 
         //  for example joining of new users.
 
