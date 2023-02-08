@@ -9,7 +9,7 @@ const io = require('socket.io')(http, {
 
 const user = {};
 app.get("/", (req, res) => {
-    res.send("<h1>server start</h1>");
+    res.send("<h1>server start ...</h1>");
 })
 http.listen(8000, function() {
     console.log("Server listening on Port", 8000);
