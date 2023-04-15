@@ -1,9 +1,10 @@
 name: Full CI/CD pipeline
 # Use this to this to launch the workflow manually.
 on: workflow_dispatch
-# Uncomment the following lines to execute the job automatically.
   push:
-    branches: [master]
+    branches:
+      - "master"
+      
 env:
   PLAYGROUND_PAT: ${{ secrets.PLAYGROUND_PAT}} #TODO: Store your PAT in this secret, or point to the correct one if it has a different name.
   TARGET_DOCKER_REGISTRY: sksharma4u #TODO: This should be your docker hub account.
