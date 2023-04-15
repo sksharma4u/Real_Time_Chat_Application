@@ -1,6 +1,6 @@
 name: Full CI/CD pipeline
 # Use this to this to launch the workflow manually.
-on: workflow_dispatch
+on: 
   push:
     branches:
       - "master"
